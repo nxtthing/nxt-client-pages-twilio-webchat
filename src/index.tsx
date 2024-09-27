@@ -45,7 +45,7 @@ const initWebchat = async (userConfig: UserConfig) => {
         }
     }
 
-    store.dispatch(changeExpandedStatus({ expanded: userConfig.appStatus === "open" }));
+    store.dispatch(changeExpandedStatus({ expanded: true }));
     delete userConfig.appStatus;
 
     const webchatConfig = merge({}, defaultConfig, userConfig);
